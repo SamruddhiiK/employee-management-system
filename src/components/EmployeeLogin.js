@@ -1,5 +1,7 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+
 
 
 
@@ -9,18 +11,34 @@ const EmployeeLogin = () => {
 
     const history = useHistory();
 
-    const onSubmit = (event) => {
 
-        // axios.post(`http://localhost:8082/appuser/login`, AppUser)
-        //     .then((response) => {
-        //         console.log(response.data);
-                    history.push('/EmployeeHome');
-            // }).catch((error) => {
-            //     console.log(error.message)
-            // });
-        event.preventDefault();
+    const [oneEmp, setOneEmp] = useState({
+        employeeId: 0,
+       // employeeName: '',
+        employeePassword: ''
+    });
+
+    const handleOneEmpData = (evt) => {
+        console.log("handleOneEmpData", evt.target.name, evt.target.value);
+        setOneEmp({
+            ...oneEmp,
+            [evt.target.name]: evt.target.value
+        });
     }
 
+    const onSubmit = (evt) => {
+
+        axios.post('http://localhost:8082/EmployeeLogin',oneEmp)
+            .then(async(response) => {
+               await history.push('/EmployeeHome');
+            }).catch(error => {
+                console.log(error.message);
+                alert('Employee Id does not exist!');
+            });
+        evt.preventDefault();
+    }
+
+    
 
 
     return (
@@ -30,12 +48,24 @@ const EmployeeLogin = () => {
 
                 <div className="form-group">
                     <label>Employee Id</label>
-                    <input type="text" className="form-control" placeholder="Enter Id" />
+                    <input type="number"
+                            id="employeeId"
+                            name="employeeId"
+                            className="form-control mb-3"
+                            value={oneEmp.employeeId}
+                            onChange={handleOneEmpData}
+                            placeholder="Enter Id" />
                 </div>
 
                 <div className="form-group">
                     <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
+                    <input type="password"
+                            id="employeePassword"
+                            name="employeePassword"
+                            className="form-control mb-3"
+                            value={oneEmp.employeePassword}
+                            onChange={handleOneEmpData}
+                            placeholder="Enter Password" />
                 </div>
 
                 <div className="form-group">

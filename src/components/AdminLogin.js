@@ -1,5 +1,7 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+
 
 
 
@@ -9,18 +11,34 @@ const AdminLogin = () => {
 
     const history = useHistory();
 
-    const onSubmit = (event) => {
 
-        // axios.post(`http://localhost:8082/appuser/login`, AppUser)
-        //     .then((response) => {
-        //         console.log(response.data);
-                    history.push('/AdminHome');
-            // }).catch((error) => {
-            //     console.log(error.message)
-            // });
-        event.preventDefault();
+    const [oneEmp, setOneEmp] = useState({
+        adminId: 0,
+       // employeeName: '',
+        adminPassword: ''
+    });
+
+    const handleOneEmpData = (evt) => {
+        console.log("handleOneEmpData", evt.target.name, evt.target.value);
+        setOneEmp({
+            ...oneEmp,
+            [evt.target.name]: evt.target.value
+        });
     }
 
+    const onSubmit = (evt) => {
+
+        axios.post('http://localhost:8082/AdminLogin',oneEmp)
+            .then(async(response) => {
+               await history.push('/AdminHome');
+            }).catch(error => {
+                console.log(error.message)
+                alert("Admin Id does not exist!");
+            });
+        evt.preventDefault();
+    }
+
+    
 
 
     return (
@@ -30,12 +48,24 @@ const AdminLogin = () => {
 
                 <div className="form-group">
                     <label>Admin Id</label>
-                    <input type="text" className="form-control" placeholder="Enter Id" />
+                    <input type="number"
+                            id="adminId"
+                            name="adminId"
+                            className="form-control mb-3"
+                            value={oneEmp.adminId}
+                            onChange={handleOneEmpData}
+                            placeholder="Enter Id" />
                 </div>
 
                 <div className="form-group">
                     <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
+                    <input type="password"
+                            id="adminPassword"
+                            name="adminPassword"
+                            className="form-control mb-3"
+                            value={oneEmp.adminPassword}
+                            onChange={handleOneEmpData}
+                            placeholder="Enter Password" />
                 </div>
 
                 <div className="form-group">
