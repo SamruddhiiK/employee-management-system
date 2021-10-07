@@ -5,7 +5,7 @@ import '../App.css';
 const Header = () => {
 
     return (
-        <header class="header sticky-top">
+        <header class="header sticky-top"style = {{ top:'0',width: '100%',overflow:'hidden', marginLeft:'0',marginRight:'0' }}>
             <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark">
                 <div class="container">
                     <Link className="navbar-brand" to="/home">
@@ -17,15 +17,15 @@ const Header = () => {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
-                        <li className="nav-item">
+                            <li className="nav-item">
                                 <Link className="nav-link" to="/Login" >Login</Link>
-                        </li>
-                        <li className="nav-item">
+                            </li>
+                            <li className="nav-item">
                                 <Link className="nav-link" to="/About" >About Us</Link>
-                        </li>
-                        <li className="nav-item">
+                            </li>
+                            <li className="nav-item">
                                 <Link className="nav-link" to="/Contact" >Contact</Link>
-                        </li>
+                            </li>
                         </ul>
                     </div>
                 </div>
