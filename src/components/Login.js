@@ -9,30 +9,21 @@ const Login = () => {
 
     const onSubmitAdmin = (event) => {
 
-        // axios.post(`http://localhost:8082/appuser/login`, AppUser)
-        //     .then((response) => {
-        //         console.log(response.data);
-                    history.push('/AdminLogin');
-            // }).catch((error) => {
-            //     console.log(error.message)
-            // });
+        history.push('/AdminLogin');
+
         event.preventDefault();
     }
 
     const onSubmitEmployee = (event) => {
 
-        // axios.post(`http://localhost:8082/appuser/login`, AppUser)
-        //     .then((response) => {
-        //         console.log(response.data);
-                    history.push('/EmployeeLogin');
-            // }).catch((error) => {
-            //     console.log(error.message)
-            // });
+        history.push('/EmployeeLogin');
+            
         event.preventDefault();
     }
 
     return (
         <div className="container" >
+             <title>Login</title>
             <h1 className="display-4 text-primary">Login Component</h1>
             <button type="button" class="btn btn-primary btn-lg" onClick={onSubmitEmployee}>Employee</button> &nbsp;&nbsp;
             <button type="button" class="btn btn-primary btn-lg" onClick={onSubmitAdmin}>Admin</button>

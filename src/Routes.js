@@ -10,11 +10,17 @@ import AdminLogin from './components/AdminLogin';
 import Login from './components/Login';
 import EmployeeLogin from './components/EmployeeLogin';
 import EmployeeHome from './components/EmployeeHome';
+import AdminDetails from './components/AdminDetails';
+import EmployeeDetails from './components/EmployeeDetails';
+import Payroll from './components/Payroll';
+import LeaveApplications from './components/LeaveApplications';
+import ResignationApplications from './components/ResignationApplications';
+import HolidayList2021 from './components/HolidayList2021';
 
 
 const Routes = () => {
     return (
-        <div className='container'>
+        <div>
             <Router>
                 <div>
                     <Header />
@@ -29,6 +35,12 @@ const Routes = () => {
                             <Route path="/AdminHome"> <AdminHome /> </Route>
                             <Route path="/EmployeeLogin"> <EmployeeLogin /> </Route>
                             <Route path="/EmployeeHome"> <EmployeeHome /> </Route>
+                            <Route path="/AdminDetails"> <AdminDetails /> </Route>
+                            <Route path="/EmployeeDetails"> <EmployeeDetails /> </Route>
+                            <Route path="/LeaveApplications"> <LeaveApplications /> </Route>
+                            <Route path="/ResignationApplications"> <ResignationApplications /> </Route>
+                            <Route path="/HolidayList2021"> <HolidayList2021 /> </Route>
+                            <Route path="/Payroll"> <Payroll /> </Route>
                         </Switch>
                     </div>
                     <Footer />

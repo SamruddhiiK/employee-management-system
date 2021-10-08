@@ -6,6 +6,7 @@ const App = () => {
     <div className="bg-light " style={{
       backgroundImage: `url(${process.env.PUBLIC_URL + 'assets/images/Bg-img.jpg'})`,
       backgroundSize: 'cover',
+      overflow: 'scroll',
       backgroundRepeat: 'no-repeat',
       width: '100vw',
       height: '100vh',
@@ -14,8 +15,7 @@ const App = () => {
             left: '0',
             right:'0',
             bottom: '0',
-            width: '100%'
-
+            
     }}>
       <Routes />
     </div>

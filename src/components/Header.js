@@ -15,7 +15,7 @@ const Header = () => {
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <div class="collapse navbar-collapse " id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                             <li className="nav-item">
                                 <Link className="nav-link" to="/Login" >Login</Link>

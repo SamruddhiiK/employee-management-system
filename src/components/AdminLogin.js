@@ -43,6 +43,7 @@ const AdminLogin = () => {
 
     return (
         <div className="container">
+            <title>Admin Login</title>
             <form>
                 <h3>Admin Login</h3>
 

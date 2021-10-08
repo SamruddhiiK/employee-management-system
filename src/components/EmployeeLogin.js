@@ -43,6 +43,7 @@ const EmployeeLogin = () => {
 
     return (
         <div className="container">
+            <title>Employee Login</title>
             <form>
                 <h3>Employee Login</h3>
 
