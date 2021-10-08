@@ -62,7 +62,7 @@ const AdminHome = () => {
             <h1 className="display-4 text-primary">Admin Home</h1>
             <div class="card-columns">
                 <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="..." class="card-img-top" alt="..."> */}
+                    <img src="https://bit.ly/2WYrYUw" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Admin Details</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -71,7 +71,7 @@ const AdminHome = () => {
                     </div>
                 </div>
                 <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="..." class="card-img-top" alt="..."> */}
+                    <img src="../EmployeeDetails.jpg" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Employee Details</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -79,7 +79,7 @@ const AdminHome = () => {
                     </div>
                 </div>
                 <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="..." class="card-img-top" alt="..."> */}
+                    <img src="https://bit.ly/3FuVmmw" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Payroll</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -89,7 +89,7 @@ const AdminHome = () => {
             </div>
             <div class="card-columns">
                 <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="..." class="card-img-top" alt="..."> */}
+                    <img src="https://bit.ly/3oGixo7" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Leave Applications</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -97,7 +97,7 @@ const AdminHome = () => {
                     </div>
                 </div>
                 <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="..." class="card-img-top" alt="..."> */}
+                    <img src="https://bit.ly/3DmUDSF" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Resignation Applications</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -105,7 +105,7 @@ const AdminHome = () => {
                     </div>
                 </div>
                 <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="..." class="card-img-top" alt="..."> */}
+                    <img src="https://bit.ly/3myoq42" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Holiday List 2021</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
