@@ -18,8 +18,6 @@ const Payroll = () => {
         salary: 0
     });
 
-
-
     const handleEmpData = (evt) => {
 
 
@@ -53,11 +51,10 @@ const Payroll = () => {
     return (
         <div className="container" >
             <title>Payroll-admin</title>
-            <h1 className="display-4 text-primary">Update Salary</h1>
-            <p>Welcome !</p>
             <div class="card" style={{ width: "18rem" }}  className="container">
+            <h3>Update Salary</h3>
+            <hr />
             <div class="card-body">
-                <p>Update Salary</p>
                 <form className="form form-group row container" onSubmit={submitEmployeeSalary} >
                     <div>
                         <p>Employee Id</p>
@@ -152,6 +149,7 @@ const Payroll = () => {
                         <tr>
                             <th scope="col">Employee Id</th>
                             <th scope="col">Employee Name</th>
+                            <th scope="col">payroll Id</th>
                             <th scope="col">Month</th>
                             <th scope="col">Year</th>
                             <th scope="col">Salary</th>
@@ -161,6 +159,7 @@ const Payroll = () => {
                         <tr>
                             <th scope="row">{emp.employee.employeeId}</th>
                             <td>{emp.employee.employeeName}</td>
+                            <td>{emp.payrollId}</td>
                             <td>{emp.month}</td>
                             <td>{emp.year}</td>
                             <td>{emp.salary}</td>
