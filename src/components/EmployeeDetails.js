@@ -1,7 +1,21 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 
 
-const EmployeeDetails= () => {
+
+
+const EmployeeDetails = () => {
+
+    const history = useHistory();
+
+    const onSubmitAddEmployee = (event) => {
+
+
+        history.push('/AddEmployee');
+
+        event.preventDefault();
+    }
+
     return (
         <div className="container" >
             <title>Employee Details</title>
@@ -21,7 +35,7 @@ const EmployeeDetails= () => {
                     <div class="card-body">
                         <h5 class="card-title">Add Employee</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" class="btn btn-primary">Add</button>
+                        <button type="button" class="btn btn-primary" onClick={onSubmitAddEmployee}>Add</button>
                     </div>
                 </div>
                 <div class="card" style={{ width: "18rem" }}>
@@ -51,6 +65,7 @@ const EmployeeDetails= () => {
                     </div>
                 </div>
             </div>
+            <p><br /><br /></p>
         </div>
     );
 }

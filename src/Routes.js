@@ -16,6 +16,8 @@ import Payroll from './components/Payroll';
 import LeaveApplications from './components/LeaveApplications';
 import ResignationApplications from './components/ResignationApplications';
 import HolidayList2021 from './components/HolidayList2021';
+import AddEmployee from './components/AddEmployee';
+
 
 
 const Routes = () => {
@@ -41,6 +43,7 @@ const Routes = () => {
                             <Route path="/ResignationApplications"> <ResignationApplications /> </Route>
                             <Route path="/HolidayList2021"> <HolidayList2021 /> </Route>
                             <Route path="/Payroll"> <Payroll /> </Route>
+                            <Route path="/AddEmployee"> <AddEmployee /> </Route>
                         </Switch>
                     </div>
                     <Footer />
