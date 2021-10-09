@@ -25,10 +25,17 @@ const Login = () => {
     return (
         <div className="container" >
              <title>Login</title>
-            <h1 className="display-4 text-primary">Login Component</h1>
-            <button type="button" class="btn btn-primary btn-lg" onClick={onSubmitEmployee}>Employee</button> &nbsp;&nbsp;
-            <button type="button" class="btn btn-primary btn-lg" onClick={onSubmitAdmin}>Admin</button>
+             <div class="card" style={{ width: "18rem" }}  className="container">
+            <div class="card-body">
+            <h2>Login </h2>
+            <hr/>
+            <button type="button" class="btn btn-primary btn-lg margin-right:16px" onClick={onSubmitEmployee}>Employee</button> 
+            
+           
+            <button type="button" class="btn btn-primary btn-lg margin-right:16px" onClick={onSubmitAdmin}>Admin</button>
             <p></p>
+            </div>
+            </div>
         </div>
     );
 }

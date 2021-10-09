@@ -1,7 +1,19 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 
 
 const EmployeeHome = () => {
+
+    const history = useHistory();
+
+    const onSubmitPayroll = (event) => {
+
+       
+        history.push('/ViewPayrollDetails');
+            
+        event.preventDefault();
+    }
+
     return (
         <div className="container" >
             <title>Employee Home</title>
@@ -12,7 +24,7 @@ const EmployeeHome = () => {
                     <div class="card-body">
                         <h5 class="card-title">Payroll</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary" onClick={onSubmitPayroll}>Go somewhere</a>
                     </div>
                 </div>
                 <div class="card" style={{ width: "18rem" }}>
