@@ -44,6 +44,8 @@ const AdminLogin = () => {
     return (
         <div className="container">
             <title>Admin Login</title>
+            <div class="card" style={{ width: "18rem" }}  className="container">
+            <div class="card-body">
             <form>
                 <h3>Admin Login</h3>
 
@@ -79,6 +81,8 @@ const AdminLogin = () => {
 
 
             </form>
+            </div>
+            </div>
         </div>
     );
 }

@@ -47,12 +47,12 @@ const AddEmployee = () => {
 
     return (
         <div className="container" >
-            <title>Payroll-admin</title>
-            <h1 className="display-4 text-primary">Update Salary</h1>
-            <p>Welcome !</p>
+            <title>Add Employee</title>
             <div class="card" style={{ width: "18rem" }}  className="container">
+            
             <div class="card-body">
-                <p>Update Salary</p>
+            <h3 >Add Employee</h3>
+            <hr/>
                 <form className="form form-group row container" onSubmit={submitEmployeeSalary} >
                     <div>
                         <p>Employee Id</p>
