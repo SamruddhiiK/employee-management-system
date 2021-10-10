@@ -14,6 +14,15 @@ const EmployeeHome = () => {
         event.preventDefault();
     }
 
+    const onSubmitHoliday = (event) => {
+
+       
+        history.push('/HolidayList2021');
+            
+        event.preventDefault();
+    }
+
+
     return (
         <div className="container" >
             <title>Employee Home</title>
@@ -66,7 +75,7 @@ const EmployeeHome = () => {
                     <div class="card-body">
                         <h5 class="card-title">Holiday List 2021</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary" onClick={onSubmitHoliday}>Go somewhere</a>
                     </div>
                 </div>
             </div>

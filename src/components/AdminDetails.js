@@ -1,7 +1,19 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 
 
 const AdminDetails= () => {
+
+    const history = useHistory();
+
+    const onSubmitDelete = (event) => {
+
+       
+        history.push('/DeleteAdmin');
+            
+        event.preventDefault();
+    }
+
     return (
         <div className="container" >
             <title>Admin Details</title>
@@ -29,7 +41,7 @@ const AdminDetails= () => {
                     <div class="card-body">
                         <h5 class="card-title">Delete Admin</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" class="btn btn-primary">Delete</button>
+                        <button type="button" class="btn btn-primary" onClick={onSubmitDelete}>Delete</button>
                     </div>
                 </div>
             </div>

@@ -20,6 +20,7 @@ import AddEmployee from './components/AddEmployee';
 import ViewPayrollDetails from './components/ViewPayrollDetails';
 import GetEmployeeById from './components/GetEmployeeById';
 import ViewEmployees from './components/ViewEmployees';
+import DeleteAdmin from './components/DeleteAdmin';
 
 
 const Routes = () => {
@@ -49,6 +50,7 @@ const Routes = () => {
                             <Route path="/ViewPayrolldetails"> <ViewPayrollDetails /> </Route>
                             <Route path="/GetEmployeeById"> <GetEmployeeById /> </Route>
                             <Route path="/ViewEmployees"> <ViewEmployees /> </Route>
+                            <Route path="/DeleteAdmin"> <DeleteAdmin /> </Route>
                         </Switch>
                     </div>
                     <Footer />
