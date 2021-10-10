@@ -37,9 +37,10 @@ const AddEmployee = () => {
             .then((response) => {
                 console.log(response);
                 setEmp(response.data);
+                alert(`Employee Id ${emp.employeeId} added Successfully!`)
             }).catch(error => {
                 console.log(error.message);
-                alert('Enter Correct Details!')
+                alert('Enter Correct Details!');
             });
         evt.preventDefault();
     }
