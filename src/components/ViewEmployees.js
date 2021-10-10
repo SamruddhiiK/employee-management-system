@@ -44,13 +44,15 @@ const ViewEmployees = (props) => {
                 setEmpList(response.data);
             }).catch(error => {
                 console.log(error.message)
+                alert("Employee List is empty");
             });
         evt.preventDefault();
     }
 
     return (
         <div className="container" >
-            <h1 className="display-4 text-primary">View Employee Details</h1>
+            <title>Get All Employees</title>
+            <h1>View Employee Details</h1>
 
             <div>
 
@@ -65,9 +67,6 @@ const ViewEmployees = (props) => {
                     />
                 </div>
                 <div className="Container text-left">
-                    <div>
-
-                    </div>
                     <table class="table table-hover table-dark">
                         <thead>
                             <tr>
@@ -75,24 +74,23 @@ const ViewEmployees = (props) => {
                                 <th scope="col">Employee Name</th>
                             </tr>
                         </thead>
+                        <tbody>
+                        <tr>
                         {empList.map((e, k) => {
                             console.log(e);
                             return (
-
+        
                                 <div k={k}>
-
-
-                                    <tbody>
-                                        <tr>
-                                            <td scope="row">{e.employeeId}</td>
-                                            <td>{e.employeeName}</td>
-                                        </tr>
-                                    </tbody>
-
-                                </div>
-
+                                    
+                                    <th scope="row">{e.employeeId}</th>
+                                    <td>{e.employeeName}</td>
+                                        
+                                 </div>
+                               
                             )
                         })}
+                         </tr>
+                        </tbody>
                     </table>
                 </div>
 
