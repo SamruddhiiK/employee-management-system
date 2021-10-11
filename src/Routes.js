@@ -23,6 +23,11 @@ import ViewEmployees from './components/ViewEmployees';
 import DeleteAdmin from './components/DeleteAdmin';
 import PayrollHome from './components/PayrollHome';
 import PayrollDetailsByEmployeeId from './components/PayrollDetailsByEmployeeId';
+import AdminById from './components/AdminById';
+import AddAdmin from './components/AddAdmin';
+import UpdateEmployee from './components/UpdateEmployee';
+import DeleteEmployee from './components/DeleteEmployee';
+import AddResignation from './components/AddResignation';
 
 
 const Routes = () => {
@@ -55,6 +60,11 @@ const Routes = () => {
                             <Route path="/DeleteAdmin"> <DeleteAdmin /> </Route>
                             <Route path="/PayrollHome"> <PayrollHome /> </Route>
                             <Route path="/PayrollDetailsByEmployeeId"> <PayrollDetailsByEmployeeId /> </Route>
+                            <Route path="/AdminById"> <AdminById/> </Route>
+                            <Route path="/AddAdmin"> <AddAdmin/> </Route>
+                            <Route path="/UpdateEmployee"> <UpdateEmployee/> </Route>
+                            <Route path="/DeleteEmployee"> <DeleteEmployee/> </Route>
+                            <Route path="/AddResignation"> <AddResignation/> </Route>
                         </Switch>
                     </div>
                     <Footer />

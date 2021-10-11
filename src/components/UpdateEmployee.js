@@ -1,39 +1,43 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
- 
-const AddEmployee = () => {
- 
+
+
+const UpdateEmployee = () => {
+
+
     const [emp, setEmp] = useState({
- 
+
             employeeId: 0,
             employeeName: '',
             employeePassword: ''
- 
+
     });
 
 
- 
+
     const handleEmpData = (evt) => {
- 
+
+
         console.log("handleEmpData", evt.target.name, evt.target.value);
         setEmp({
             ...emp,
             [evt.target.name]: evt.target.value,
            
- 
+
         });
- 
+
         evt.preventDefault();
     }
- 
-    const submitEmployeeSalary = (evt) => {
- 
+
+
+    const submitUpdateEmployee = (evt) => {
+
         console.log(emp);
-        axios.post('http://localhost:8082//addEmployee', emp)
+        axios.put('http://localhost:8082//updateEmployee', emp)
             .then((response) => {
                 console.log(response);
                 setEmp(response.data);
-                alert(`Employee added successfully!`)
+                alert(`Employee updated successfully!`)
             }).catch(error => {
                 console.log(error.message);
                 alert('Enter Correct Details!')
@@ -41,16 +45,16 @@ const AddEmployee = () => {
         evt.preventDefault();
     }
     
- 
+
     return (
         <div className="container" >
-            <title>Add Employee</title>
+            <title>Update Employee</title>
             <div class="card" style={{ width: "18rem" }}  className="container">
             
             <div class="card-body">
-            <h3 >Add Employee</h3>
+            <h3 >Update Employee</h3>
             <hr/>
-                <form className="form form-group row container" onSubmit={submitEmployeeSalary} >
+                <form className="form form-group row container" onSubmit={submitUpdateEmployee} >
                     <div>
                         <p>Employee Id</p>
                         <input
@@ -93,7 +97,7 @@ const AddEmployee = () => {
                             id="submit"
                             name="submit"
                             className="btn btn-primary mb-3"
-                            value="Add Employee"
+                            value="Update Employee"
                         />
                     </div>
                 </form>
@@ -105,5 +109,5 @@ const AddEmployee = () => {
         </div>
     );
 }
- 
-export default AddEmployee;
+
+export default UpdateEmployee;

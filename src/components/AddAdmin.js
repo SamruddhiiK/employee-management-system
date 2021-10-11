@@ -1,23 +1,23 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
  
-const AddEmployee = () => {
+const AddAdmin = () => {
  
-    const [emp, setEmp] = useState({
+    const [admin, setAdmin] = useState({
  
-            employeeId: 0,
-            employeeName: '',
-            employeePassword: ''
+            adminId: 0,
+            adminName: '',
+            adminPassword: ''
  
     });
 
 
  
-    const handleEmpData = (evt) => {
+    const handleAdminData = (evt) => {
  
-        console.log("handleEmpData", evt.target.name, evt.target.value);
-        setEmp({
-            ...emp,
+        console.log("handleAdminData", evt.target.name, evt.target.value);
+        setAdmin({
+            ...admin,
             [evt.target.name]: evt.target.value,
            
  
@@ -26,14 +26,14 @@ const AddEmployee = () => {
         evt.preventDefault();
     }
  
-    const submitEmployeeSalary = (evt) => {
+    const submitAddAdmin = (evt) => {
  
-        console.log(emp);
-        axios.post('http://localhost:8082//addEmployee', emp)
+        console.log(admin);
+        axios.post('http://localhost:8082//addAdmin', admin)
             .then((response) => {
                 console.log(response);
-                setEmp(response.data);
-                alert(`Employee added successfully!`)
+                setAdmin(response.data);
+                alert(`Admin added successfully!`)
             }).catch(error => {
                 console.log(error.message);
                 alert('Enter Correct Details!')
@@ -44,56 +44,56 @@ const AddEmployee = () => {
  
     return (
         <div className="container" >
-            <title>Add Employee</title>
+            <title>Add Admin</title>
             <div class="card" style={{ width: "18rem" }}  className="container">
             
             <div class="card-body">
-            <h3 >Add Employee</h3>
+            <h3 >Add Admin</h3>
             <hr/>
-                <form className="form form-group row container" onSubmit={submitEmployeeSalary} >
+                <form className="form form-group row container" onSubmit={submitAddAdmin} >
                     <div>
-                        <p>Employee Id</p>
+                        <p>Admin Id</p>
                         <input
                             type="number"
-                            id="employeeId"
-                            name="employeeId"
+                            id="adminId"
+                            name="adminId"
                             className="form-control mb-3"
-                            value={emp.employeeId}
+                            value={admin.adminId}
                             placeholder="Enter Id"
-                            onChange={handleEmpData}
+                            onChange={handleAdminData}
                         />
-                        <p>Employee Name</p>
+                        <p>Admin Name</p>
                         <input
                             type="text"
-                            id="employeeName"
-                            name="employeeName"
+                            id="adminName"
+                            name="adminName"
                             className="form-control mb-3"
                             pattern="[A-Za-z ]+" 
                             title="Please enter only characters!"
                             minLength="3"
                             maxLength="20"
-                            value={emp.employeeName}
+                            value={admin.adminName}
                             placeholder="Enter Name"
-                            onChange={handleEmpData}
+                            onChange={handleAdminData}
                         />
                         <p>Passsword</p>
                         <input
                             type="password"
-                            id="employeePassword"
-                            name="employeePassword"
+                            id="adminPassword"
+                            name="adminPassword"
                             className="form-control mb-3"
                             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
                             title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required
-                            value={emp.employeePassword}
+                            value={admin.adminPassword}
                             placeholder="Enter Password"
-                            onChange={handleEmpData}
+                            onChange={handleAdminData}
                         />
                         <input
                             type="submit"
                             id="submit"
                             name="submit"
                             className="btn btn-primary mb-3"
-                            value="Add Employee"
+                            value="Add Admin"
                         />
                     </div>
                 </form>
@@ -106,4 +106,4 @@ const AddEmployee = () => {
     );
 }
  
-export default AddEmployee;
+export default AddAdmin;

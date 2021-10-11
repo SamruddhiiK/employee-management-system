@@ -32,6 +32,22 @@ const EmployeeDetails = () => {
         event.preventDefault();
     }
 
+    const onSubmitUpdateEmployee= (event) => {
+
+
+        history.push('/UpdateEmployee');
+
+        event.preventDefault();
+    }
+
+    const onSubmitDeleteEmployee= (event) => {
+
+
+        history.push('/DeleteEmployee');
+
+        event.preventDefault();
+    }
+
     return (
         <div className="container" >
             <title>Employee Details</title>
@@ -59,7 +75,7 @@ const EmployeeDetails = () => {
                     <div class="card-body">
                         <h5 class="card-title">Delete Employee</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" class="btn btn-primary" >Delete</button>
+                        <button type="button" class="btn btn-primary" onClick={onSubmitDeleteEmployee} >Delete</button>
                     </div>
                 </div>
             </div>
@@ -69,7 +85,7 @@ const EmployeeDetails = () => {
                     <div class="card-body">
                         <h5 class="card-title">Update Employee</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" class="btn btn-primary" >Update</button>
+                        <button type="button" class="btn btn-primary" onClick={onSubmitUpdateEmployee}>Update</button>
                     </div>
                 </div>
                 <div class="card" style={{ width: "18rem" }}>
