@@ -65,7 +65,7 @@ const AdminHome = () => {
                     <img src="https://bit.ly/2WYrYUw" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Admin Details</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some functionalities and authorities of admin inside...</p>
                         {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
                         <button type="button" class="btn btn-primary" onClick={onSubmitAdminDeatails}>Admin Details</button>
                     </div>
@@ -74,7 +74,7 @@ const AdminHome = () => {
                     <img src="https://bit.ly/3lt5fcl" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Employee Details</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some functionalities and authorities of admin regarding employees here...</p>
                         <button type="button" class="btn btn-primary" onClick={onSubmitEmployeeDeatails}>Employee Details</button>
                     </div>
                 </div>
@@ -82,7 +82,7 @@ const AdminHome = () => {
                     <img src="https://bit.ly/3FuVmmw" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Payroll</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Manage the payrolls of employees here...</p>
                         <button type="button" class="btn btn-primary" onClick={onSubmitPayroll}>Payroll</button>
                     </div>
                 </div>
@@ -92,7 +92,7 @@ const AdminHome = () => {
                     <img src="https://bit.ly/3oGixo7" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Leave Applications</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Go through the leave applications of employees...</p>
                         <button type="button" class="btn btn-primary" onClick={onSubmitLeaveAppl}>Leave Applications</button>
                     </div>
                 </div>
@@ -100,7 +100,7 @@ const AdminHome = () => {
                     <img src="https://bit.ly/3DmUDSF" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Resignation Applications</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Go through the resignation applications of employees...</p>
                         <button type="button" class="btn btn-primary" onClick={onSubmitResignAppl}>Resignation Applications</button>
                     </div>
                 </div>
@@ -108,7 +108,7 @@ const AdminHome = () => {
                     <img src="https://bit.ly/3myoq42" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Holiday List 2021</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Take a look at list of holidays for current year!..</p>
                         <button type="button" class="btn btn-primary" onClick={onSubmitHoliday}>View</button>
                     </div>
                 </div>

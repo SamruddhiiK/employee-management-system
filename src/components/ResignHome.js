@@ -24,18 +24,28 @@ const ResignHome = () => {
 
     return (
         <div className="container" >
-             <title>Resignation</title>
-             <div class="card" style={{ width: "18rem" }}  className="container">
-            <div class="card-body">
-            <h2>View Resignation Details</h2>
-            <hr/>
-            <button type="button" class="btn btn-primary btn-lg margin-right:16px" onClick={onSubmitResignAppl}>Resignation Applications</button> 
-            
-           
-            <button type="button" class="btn btn-primary btn-lg margin-right:16px" onClick={onSubmitUpdateStatus}>Update Status</button>
-            <p></p>
+            <title>Employee Details</title>
+            <h1 className="display-4 text-primary">Employee Details</h1>
+            <div class="card-columns">
+                <div class="card" style={{ width: "18rem" }}>
+                    {/* <img src="" class="card-img-top" alt="..." /> */}
+                    <div class="card-body">
+                        <h5 class="card-title">View Applications</h5>
+                        <p class="card-text">View all the applications here..</p>
+                        {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
+                        <button type="button" class="btn btn-primary" onClick={onSubmitResignAppl}>View</button>
+                    </div>
+                </div>
+                <div class="card" style={{ width: "18rem" }}>
+                    {/* <img src="https://bit.ly/3DmUZbX" class="card-img-top" alt="..." /> */}
+                    <div class="card-body">
+                        <h5 class="card-title">Update Status</h5>
+                        <p class="card-text">Update Resignation status..</p>
+                        <button type="button" class="btn btn-primary" onClick={onSubmitUpdateStatus}>Update</button>
+                    </div>
+                </div>
             </div>
-            </div>
+            <p><br /><br /></p>
         </div>
     );
 }

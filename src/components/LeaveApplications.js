@@ -114,13 +114,13 @@ const LeaveApplications = (props) => {
                         onClick={submitLeaveApplications}
                     />
                 </div>
-                <div className="Container text-left">
+                <div className="container text-left">
                     <table class="table table-hover table-dark">
                         <thead>
                             <tr>
-                                <th scope="col">Employee Id</th>
+                                {/* <th scope="col">Employee Id</th> */}
                                 <th scope="col">Leave Id</th>
-                                <th scope="col">Employee Name</th>
+                                {/* <th scope="col">Employee Name</th> */}
                                 <th scope="col">From Date</th>
                                 <th scope="col">to Date</th>
                                 <th scope="col">Status</th>
@@ -134,9 +134,9 @@ const LeaveApplications = (props) => {
 
                                         <div k={k}>
 
-                                            <th scope="row">{e.employee.employeeId}</th>
+                                            {/* <th scope="row">{e.employee.employeeId}</th> */}
                                             <td>{e.leaveId}</td>
-                                            <td>{e.employee.employeeName}</td>
+                                            {/* <td>{e.employee.employeeName}</td> */}
                                             <td>{e.leaveFromDate}</td>
                                             <td>{e.leaveToDate}</td>
                                             <td>{e.leaveStatus}</td>
