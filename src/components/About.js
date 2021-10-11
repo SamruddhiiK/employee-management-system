@@ -10,7 +10,7 @@ const About = () => {
                 <img src="https://bit.ly/2X58QUS" class="card-img"  />
                 <div class ="card-img-overlay">
                 <h1 class ="card-title">Our Company</h1>
-                <p class ="card-text">One of the leading recruitment companies in the country and is prominent global player providing its services to large multinationals and big business conglomerates. It is currently serving more than 1100 companies for their manpower needs across pan India & international markets like US, Europe, Far East & Middle East."</p>
+                <p class ="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 <p class ="card-text"></p>
                 </div>
             </div>
