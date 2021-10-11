@@ -30,6 +30,22 @@ const EmployeeHome = () => {
         event.preventDefault();
     }
 
+    const onSubmitResignStatus = (event) => {
+
+       
+        history.push('/CheckResignStatus');
+            
+        event.preventDefault();
+    }
+
+    const onSubmitAddLeave = (event) => {
+
+       
+        history.push('/AddLeave');
+            
+        event.preventDefault();
+    }
+
 
     return (
         <div className="container" >
@@ -57,7 +73,7 @@ const EmployeeHome = () => {
                     <div class="card-body">
                         <h5 class="card-title">Apply for Leave</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary" onClick={onSubmitAddLeave}>Go somewhere</a>
                     </div>
                 </div>
             </div>
@@ -93,7 +109,7 @@ const EmployeeHome = () => {
                     <div class="card-body">
                         <h5 class="card-title">Resignation Status</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary" onClick={onSubmitResignStatus}>Go somewhere</a>
                     </div>
                 </div>
             </div>

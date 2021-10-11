@@ -24,18 +24,28 @@ const Login = () => {
 
     return (
         <div className="container" >
-             <title>Login</title>
-             <div class="card" style={{ width: "18rem" }}  className="container">
-            <div class="card-body">
-            <h2>Login </h2>
-            <hr/>
-            <button type="button" class="btn btn-primary btn-lg margin-right:16px" onClick={onSubmitEmployee}>Employee</button> 
-            
-           
-            <button type="button" class="btn btn-primary btn-lg margin-right:16px" onClick={onSubmitAdmin}>Admin</button>
-            <p></p>
-            </div>
-            </div>
+            <title>Admin Home</title>
+            <h1 className="display-4 text-primary">Admin Home</h1>
+            <div class="card-columns">
+                <div class="card" style={{ width: "18rem"}}>
+                    <img src="https://bit.ly/3argxHX" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Admin Login</h5>
+                        <p class="card-text"></p>
+                        {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
+                        <button type="button" class="btn btn-primary" onClick={onSubmitAdmin}>Login</button>
+                    </div>
+                </div>
+                <div class="card" style={{ width: "18rem" }}>
+                    <img src="https://bit.ly/3Dm6pg6" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Employee Login</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" onClick={onSubmitEmployee}>Login</button>
+                    </div>
+                </div>
+                </div>
+            <p><br/><br/></p>
         </div>
     );
 }

@@ -28,6 +28,12 @@ import AddAdmin from './components/AddAdmin';
 import UpdateEmployee from './components/UpdateEmployee';
 import DeleteEmployee from './components/DeleteEmployee';
 import AddResignation from './components/AddResignation';
+import LeaveHome from './components/LeaveHome';
+import CheckResignStatus from './components/CheckResignStatus';
+import AddLeave from './components/AddLeave';
+import UpdateResignationStatus from './components/UpdateResignationStatus';
+import ResignHome from './components/ResignHome';
+import UpdateLeaveStatus from './components/UpdateLeaveStatus';
 
 
 const Routes = () => {
@@ -65,6 +71,12 @@ const Routes = () => {
                             <Route path="/UpdateEmployee"> <UpdateEmployee/> </Route>
                             <Route path="/DeleteEmployee"> <DeleteEmployee/> </Route>
                             <Route path="/AddResignation"> <AddResignation/> </Route>
+                            <Route path="/LeaveHome"> <LeaveHome/> </Route>
+                            <Route path="/CheckResignStatus"> <CheckResignStatus/> </Route>
+                            <Route path="/AddLeave"> <AddLeave/> </Route>
+                            <Route path="/UpdateResignationStatus"> <UpdateResignationStatus/> </Route>
+                            <Route path="/ResignHome"> <ResignHome/> </Route>
+                            <Route path="/UpdateLeaveStatus"> <UpdateLeaveStatus/> </Route>
                         </Switch>
                     </div>
                     <Footer />

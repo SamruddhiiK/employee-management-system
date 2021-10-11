@@ -34,7 +34,7 @@ const AdminHome = () => {
     const onSubmitLeaveAppl = (event) => {
 
        
-        history.push('/LeaveApplications');
+        history.push('/Leavehome');
             
         event.preventDefault();
     }
@@ -42,7 +42,7 @@ const AdminHome = () => {
     const onSubmitResignAppl = (event) => {
 
        
-        history.push('/ResignationApplications');
+        history.push('/ResignHome');
             
         event.preventDefault();
     }
@@ -71,7 +71,7 @@ const AdminHome = () => {
                     </div>
                 </div>
                 <div class="card" style={{ width: "18rem" }}>
-                    <img src="https://bit.ly/3mBd2nW" class="card-img-top" alt="..." />
+                    <img src="https://bit.ly/3lt5fcl" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Employee Details</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -88,7 +88,7 @@ const AdminHome = () => {
                 </div>
             </div>
             <div class="card-columns">
-                <div class="card" style={{ width: "18rem" }}>
+                <div class="card" style={{ width: "18rem", height:'490' }}>
                     <img src="https://bit.ly/3oGixo7" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Leave Applications</h5>
