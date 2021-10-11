@@ -9,7 +9,7 @@ const EmployeeHome = () => {
     const onSubmitPayroll = (event) => {
 
        
-        history.push('/ViewPayrollDetails');
+        history.push('/PayrollHome');
             
         event.preventDefault();
     }

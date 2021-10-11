@@ -50,7 +50,7 @@ const ViewPayrollDetails = () => {
 
     return (
         <div className="container" >
-            <title>Add Employee</title>
+            <title>View Salary Details</title>
             <div class="card" style={{ width: "18rem" }}  className="container">
             
             <div class="card-body">

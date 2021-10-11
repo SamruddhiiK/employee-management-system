@@ -18,9 +18,9 @@ const Payroll = () => {
         salary: 0
     });
 
-    const handleEmpData = (evt) => {
+    const handleEmpData = level => (evt) => {
 
-
+        if(!level){
         console.log("handleEmpData", evt.target.name, evt.target.value);
         setEmp({
             ...emp,
@@ -28,7 +28,15 @@ const Payroll = () => {
            
 
         });
-
+    }else {
+        setEmp({
+          ...emp,
+          [level]: {
+            ...emp[level],
+            [evt.target.name] : evt.target.value
+          }
+        })
+      }
         evt.preventDefault();
     }
 
@@ -60,12 +68,12 @@ const Payroll = () => {
                         <p>Employee Id</p>
                         <input
                             type="number"
-                            id="employee.employeeId"
-                            name="employee.employeeId"
+                            id="employeeId"
+                            name="employeeId"
                             className="form-control mb-3"
                             value={emp.employee.employeeId}
                             placeholder="Enter Id"
-                            onChange={handleEmpData}
+                            onChange={handleEmpData('employee')}
                         />
                         <p>Payroll Id</p>
                         <input
@@ -75,7 +83,7 @@ const Payroll = () => {
                             className="form-control mb-3"
                             value={emp.payrollId}
                             placeholder="Enter Id"
-                            onChange={handleEmpData}
+                            onChange={handleEmpData()}
                         />
                         <p>No Of Working Days</p>
                         <input
@@ -85,7 +93,7 @@ const Payroll = () => {
                             className="form-control mb-3"
                             value={emp.noOfWorkingDays}
                             placeholder="Enter No. Of Working Days"
-                            onChange={handleEmpData}
+                            onChange={handleEmpData()}
                         />
                         {/* <input
                             type="text"
@@ -98,7 +106,7 @@ const Payroll = () => {
                         /> */}
                         <p>Month</p>
                         <div>
-                            <select id='month' type="text" name="month" value={emp.month} onChange={handleEmpData}>
+                            <select id='month' type="text" name="month" value={emp.month} onChange={handleEmpData()}>
                                 <option value="Select" >--Select Month--</option>
                                 <option value="January">January</option>
                                 <option value="February" >February</option>
@@ -116,7 +124,7 @@ const Payroll = () => {
                         </div>
                         <p>Year</p>
                         <div>
-                            <select id='year' type="number" name="year" value={emp.year} onChange={handleEmpData}>
+                            <select id='year' type="number" name="year" value={emp.year} onChange={handleEmpData()}>
                                 <option >--Select Year--</option>
                                 <option value="2021">2021</option>
                             </select>
@@ -129,7 +137,7 @@ const Payroll = () => {
                             className="form-control mb-3"
                             value={emp.salary}
                             placeholder="Enter Salary"
-                            onChange={handleEmpData}
+                            onChange={handleEmpData()}
                         />
                         <input
                             type="submit"
