@@ -51,10 +51,10 @@ const EmployeeDetails = () => {
     return (
         <div className="container" >
             <title>Employee Details</title>
-            <h1 className="display-4 text-primary">Employee Details</h1>
+            <p><br /><br /></p>
             <div class="card-columns">
                 <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="" class="card-img-top" alt="..." /> */}
+                    <img src="https://bit.ly/3lx6wzh" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">View Employees</h5>
                         <p class="card-text">View all the employees in your organisation..</p>
@@ -62,7 +62,7 @@ const EmployeeDetails = () => {
                         <button type="button" class="btn btn-primary" onClick={onSubmitViewEmployees}>View</button>
                     </div>
                 </div>
-                <div class="card" style={{ width: "18rem" }}>
+                <div class="card" style={{ width: "18rem"}}>
                     <img src="https://bit.ly/3DmUZbX" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Add Employee</h5>
@@ -71,7 +71,7 @@ const EmployeeDetails = () => {
                     </div>
                 </div>
                 <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="..." class="card-img-top" alt="..."> */}
+                    <img src="https://bit.ly/3iTxgs2" class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h5 class="card-title">Delete Employee</h5>
                         <p class="card-text">Remove employees from the database..</p>
@@ -89,7 +89,7 @@ const EmployeeDetails = () => {
                     </div>
                 </div>
                 <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="..." class="card-img-top" alt="..."> */}
+                    <img src="https://bit.ly/3lwMLYE" class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h5 class="card-title">Get Employee by Id</h5>
                         <p class="card-text">Find a specific employee by clicking here..</p>

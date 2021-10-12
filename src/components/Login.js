@@ -24,11 +24,11 @@ const Login = () => {
 
     return (
         <div className="container" >
-            <title>Admin Home</title>
-            <h1 className="display-4 text-primary">Admin Home</h1>
+            <title>Login</title>
+            <p><br/><br/></p>
             <div class="card-columns">
                 <div class="card" style={{ width: "18rem"}}>
-                    <img src="https://bit.ly/3argxHX" class="card-img-top" alt="..." />
+                    <img src="https://bit.ly/2YLVQnJ" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Admin Login</h5>
                         <p class="card-text"></p>

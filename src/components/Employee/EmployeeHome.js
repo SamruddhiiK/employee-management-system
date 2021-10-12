@@ -46,6 +46,21 @@ const EmployeeHome = () => {
         event.preventDefault();
     }
 
+    const onSubmitCheckLeaveStatus = (event) => {
+
+       
+        history.push('/CheckLeaveStatus');
+            
+        event.preventDefault();
+    }
+    const onSubmitCompanyInfo = (event) => {
+
+       
+        history.push('/GetCompanyInfo');
+            
+        event.preventDefault();
+    }
+
 
     return (
         <div className="container" >
@@ -53,7 +68,7 @@ const EmployeeHome = () => {
             <p><br/><br/></p>
             <div class="card-columns">
                 <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="" class="card-img-top" alt="..." /> */}
+                    <img src="https://bit.ly/3FAJ38l" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Payroll</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -61,7 +76,7 @@ const EmployeeHome = () => {
                     </div>
                 </div>
                 <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="..." class="card-img-top" alt="..."> */}
+                    <img src="https://bit.ly/3AsEEk4" class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h5 class="card-title">Add Resignation</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -69,7 +84,7 @@ const EmployeeHome = () => {
                     </div>
                 </div>
                 <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="..." class="card-img-top" alt="..."> */}
+                    <img src="https://bit.ly/3Dzrd3E" class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h5 class="card-title">Apply for Leave</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -79,23 +94,23 @@ const EmployeeHome = () => {
             </div>
             <div class="card-columns">
                 <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="..." class="card-img-top" alt="..."> */}
+                    <img src="https://bit.ly/3v54Hg5" class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h5 class="card-title">Leave Applications Status</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go </a>
+                        <a href="#" class="btn btn-primary" onClick={onSubmitCheckLeaveStatus}>Go </a>
                     </div>
                 </div>
-                <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="..." class="card-img-top" alt="..."> */}
+                <div class="card" style={{ width: "18rem", height:"35rem"}}>
+                    <img src="https://bit.ly/2YIKiBe" class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h5 class="card-title">Company Information</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go </a>
+                        <a href="#" class="btn btn-primary" onClick={onSubmitCompanyInfo}>Go </a>
                     </div>
                 </div>
                 <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="..." class="card-img-top" alt="..."> */}
+                    <img src="https://bit.ly/3FFnrYA" class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h5 class="card-title">Holiday List 2021</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -105,7 +120,7 @@ const EmployeeHome = () => {
             </div>
             <div class="card-columns">
                 <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="..." class="card-img-top" alt="..."> */}
+                    <img src="https://bit.ly/3BAbYXO" class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h5 class="card-title">Resignation Status</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

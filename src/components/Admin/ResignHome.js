@@ -25,7 +25,7 @@ const ResignHome = () => {
     return (
         <div className="container" >
             <title>Employee Details</title>
-            <h1 className="display-4 text-primary">Employee Details</h1>
+            <p><br /><br /></p>
             <div class="card-columns">
                 <div class="card" style={{ width: "18rem" }}>
                     {/* <img src="" class="card-img-top" alt="..." /> */}

@@ -59,7 +59,7 @@ const AdminHome = () => {
     return (
         <div className="container" >
             <title>Admin Home</title>
-            <h1 className="display-4 text-primary">Admin Home</h1>
+            <p><br/><br/></p>
             <div class="card-columns">
                 <div class="card" style={{ width: "18rem" }}>
                     <img src="https://bit.ly/2WYrYUw" class="card-img-top" alt="..." />
@@ -88,7 +88,7 @@ const AdminHome = () => {
                 </div>
             </div>
             <div class="card-columns">
-                <div class="card" style={{ width: "18rem", height:'490' }}>
+                <div class="card" style={{ width: "18rem", height:'29rem' }}>
                     <img src="https://bit.ly/3oGixo7" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Leave Applications</h5>

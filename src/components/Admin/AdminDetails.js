@@ -33,10 +33,10 @@ const AdminDetails= () => {
     return (
         <div className="container" >
             <title>Admin Details</title>
-            <h1 className="display-4 text-primary">Admin Details</h1>
+            <p><br/><br/></p>
             <div class="card-columns">
-                <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="https://bit.ly/2WYrYUw" class="card-img-top" alt="..." /> */}
+                <div class="card" style={{ width: "18rem", height:"28rem"}}>
+                    <img src="https://bit.ly/3BBXTZP" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Add Admin</h5>
                         <p class="card-text">Want to add new admins in your database..click here</p>
@@ -45,15 +45,15 @@ const AdminDetails= () => {
                     </div>
                 </div>
                 <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="../EmployeeDetails.jpg" class="card-img-top" alt="..." /> */}
+                    <img src="https://bit.ly/3iPgjif" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Get Admin Details</h5>
                         <p class="card-text">Review in brief about the admins..</p>
                         <button type="button" class="btn btn-primary" onClick={onSubmitViewAdmin}>View</button>
                     </div>
                 </div>
-                <div class="card" style={{ width: "18rem" }}>
-                    {/* <img src="https://bit.ly/3FuVmmw" class="card-img-top" alt="..." /> */}
+                <div class="card" style={{ width: "18rem", height:"28rem"}}>
+                    <img src="https://bit.ly/3ats4q7" class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Delete Admin</h5>
                         <p class="card-text">Remove admins from database here..</p>

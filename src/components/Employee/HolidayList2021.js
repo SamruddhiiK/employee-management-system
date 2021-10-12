@@ -41,7 +41,7 @@ const HolidayList2021 = (props) => {
 
     return (
         <div className="container" >
-            <h1 className="display-4 text-primary">Holiday List</h1>
+            <p><br /><br /></p>
 
             <div>
 
@@ -76,9 +76,11 @@ const HolidayList2021 = (props) => {
 
                                     <tbody>
                                         <tr>
+                                            
                                             <td scope="row">{e.serialNo}</td>
                                             <td scope="row">{e.date}</td>
                                             <td scope="row">{e.holiday}</td>
+                                            
                                         </tr>
                                     </tbody>
 

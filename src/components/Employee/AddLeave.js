@@ -89,11 +89,12 @@ const AddLeave = () => {
                         />
                         <p>Status</p>
                             <div>
-                            <select id='status' type="text" name="status" value={emp.leaveStatus} onChange={handleEmpData}>
+                            <select id='leaveStatus' type="text" name="leaveStatus" value={emp.leaveStatus} onChange={handleEmpData}>
                                 <option value="Select" >--Select Status--</option>
                                 <option value="Applied">Applied</option>
                             </select>
                         </div>
+                        <p><br/></p>
                         <input
                             type="submit"
                             id="submit"

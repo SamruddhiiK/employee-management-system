@@ -1,39 +1,41 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import About from './components/About';
-import AdminHome from './components/AdminHome';
+import AdminHome from './components/Admin/AdminHome';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home';
-import AdminLogin from './components/AdminLogin';
+import AdminLogin from './components/Admin/AdminLogin';
 import Login from './components/Login';
-import EmployeeLogin from './components/EmployeeLogin';
-import EmployeeHome from './components/EmployeeHome';
-import AdminDetails from './components/AdminDetails';
-import EmployeeDetails from './components/EmployeeDetails';
-import Payroll from './components/Payroll';
-import LeaveApplications from './components/LeaveApplications';
-import ResignationApplications from './components/ResignationApplications';
-import HolidayList2021 from './components/HolidayList2021';
-import AddEmployee from './components/AddEmployee';
-import ViewPayrollDetails from './components/ViewPayrollDetails';
-import GetEmployeeById from './components/GetEmployeeById';
-import ViewEmployees from './components/ViewEmployees';
-import DeleteAdmin from './components/DeleteAdmin';
-import PayrollHome from './components/PayrollHome';
-import PayrollDetailsByEmployeeId from './components/PayrollDetailsByEmployeeId';
-import AdminById from './components/AdminById';
-import AddAdmin from './components/AddAdmin';
-import UpdateEmployee from './components/UpdateEmployee';
-import DeleteEmployee from './components/DeleteEmployee';
-import AddResignation from './components/AddResignation';
-import LeaveHome from './components/LeaveHome';
-import CheckResignStatus from './components/CheckResignStatus';
-import AddLeave from './components/AddLeave';
-import UpdateResignationStatus from './components/UpdateResignationStatus';
-import ResignHome from './components/ResignHome';
-import UpdateLeaveStatus from './components/UpdateLeaveStatus';
+import EmployeeHome from './components/Employee/EmployeeHome';
+import AdminDetails from './components/Admin/AdminDetails';
+import EmployeeDetails from './components/Admin/EmployeeDetails';
+import Payroll from './components/Admin/Payroll';
+import LeaveApplications from './components/Admin/LeaveApplications';
+import ResignationApplications from './components/Admin/ResignationApplications';
+import HolidayList2021 from './components/Employee/HolidayList2021';
+import AddEmployee from './components/Admin/AddEmployee';
+import ViewPayrollDetails from './components/Employee/ViewPayrollDetails';
+import GetEmployeeById from './components/Admin/GetEmployeeById';
+import ViewEmployees from './components/Admin/ViewEmployees';
+import DeleteAdmin from './components/Admin/DeleteAdmin';
+import PayrollHome from './components/Employee/PayrollHome';
+import PayrollDetailsByEmployeeId from './components/Employee/PayrollDetailsByEmployeeId';
+import AdminById from './components/Admin/AdminById';
+import AddAdmin from './components/Admin/AddAdmin';
+import UpdateEmployee from './components/Admin/UpdateEmployee';
+import DeleteEmployee from './components/Admin/DeleteEmployee';
+import AddResignation from './components/Employee/AddResignation';
+import LeaveHome from './components/Admin/LeaveHome';
+import CheckResignStatus from './components/Employee/CheckResignStatus';
+import AddLeave from './components/Employee/AddLeave';
+import UpdateResignationStatus from './components/Admin/UpdateResignationStatus';
+import ResignHome from './components/Admin/ResignHome';
+import UpdateLeaveStatus from './components/Admin/UpdateLeaveStatus';
+import CheckLeaveStatus from './components/Employee/CheckLeaveStatus';
+import GetCompanyInfo from './components/Employee/GetCompanyInfo';
+import EmployeeLogin from './components/Employee/EmployeeLogin';
 
 
 const Routes = () => {
@@ -77,6 +79,8 @@ const Routes = () => {
                             <Route path="/UpdateResignationStatus"> <UpdateResignationStatus/> </Route>
                             <Route path="/ResignHome"> <ResignHome/> </Route>
                             <Route path="/UpdateLeaveStatus"> <UpdateLeaveStatus/> </Route>
+                            <Route path="/CheckLeaveStatus"> <CheckLeaveStatus/> </Route>
+                            <Route path="/GetCompanyInfo"> <GetCompanyInfo/> </Route>
                         </Switch>
                     </div>
                     <Footer />
