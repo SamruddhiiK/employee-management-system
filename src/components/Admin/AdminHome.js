@@ -26,7 +26,7 @@ const AdminHome = () => {
     const onSubmitPayroll = (event) => {
 
        
-        history.push('/Payroll');
+        history.push('/PayrollTable');
             
         event.preventDefault();
     }

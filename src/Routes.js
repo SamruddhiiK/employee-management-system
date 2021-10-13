@@ -38,6 +38,7 @@ import GetCompanyInfo from './components/Employee/GetCompanyInfo';
 import EmployeeLogin from './components/Employee/EmployeeLogin';
 import { Navbar } from 'react-bootstrap';
 import LoginController from './components/LoginController';
+import PayrollTable from './components/Admin/PayrollTable';
 
 
 const Routes = () => {
@@ -84,6 +85,7 @@ const Routes = () => {
                             <Route path="/CheckLeaveStatus"> <CheckLeaveStatus/> </Route>
                             <Route path="/GetCompanyInfo"> <GetCompanyInfo/> </Route>
                             <Route path="/LoginController"> <LoginController/> </Route>
+                            <Route path="/PayrollTable"> <PayrollTable/> </Route>
                         </Switch>
                     </div>
                     <Footer />

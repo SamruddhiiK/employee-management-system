@@ -70,17 +70,6 @@ const LeaveApplications = (props) => {
 
 
                     </div>
-                    {/* <table class="table table-hover table-dark">
-                        <thead>
-                            <tr>
-                                <th scope="col"> leaveId </th>
-                                <th scope="col">leaveFDaterom</th>
-                                <th scope="col">leaveStatus</th>
-                                
-                                <th scope="col">leaveToDate</th>
-
-                            </tr>
-                        </thead> */}
                         {leaveList.map((e, k) => {
                             console.log(e);
                             return (
@@ -99,20 +88,6 @@ const LeaveApplications = (props) => {
                                         <div className="col-sm">
                                         {e.leaveToDate}
                                         </div>
-                                        
-
-
-
-
-                                    {/* <tbody>
-                                        <tr>
-                                            <td scope="row">{e.leaveId}</td>
-                                            <td scope="row">{e.leaveFromDate}</td>
-                                            <td scope="row">{e.leaveStatus}</td>
-                                            <td scope="row">{e.leaveToDate}</td>
-                                        </tr>
-                                    </tbody> */}
-
                                 </div>
 
                             )
