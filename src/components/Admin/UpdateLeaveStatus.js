@@ -34,7 +34,7 @@ const UpdateLeaveStatus = () => {
     const submitUpdateLeaveStatus = (evt) => {
 
         console.log(leave);
-        axios.put('http://localhost:8082//updateLeaveStatus', leave)
+        axios.put('http://localhost:8082/updateLeaveStatus', leave)
             .then((response) => {
                 console.log(response);
                 setLeave(response.data);
@@ -68,35 +68,12 @@ const UpdateLeaveStatus = () => {
                             placeholder="Enter ID"
                             onChange={handleLeaveData}
                         />
-                        <p>Leave Starting Date</p>
-                        <input
-                            type="date"
-                            id="leaveFromDate"
-                            name="leaveFromDate"
-                            className="form-control mb-3"
-                            min="2021-01-01"
-                            max="2021-12-31"
-                            value={leave.leaveFromDate}
-                            placeholder="Enter Starting Date of Leave"
-                            onChange={handleLeaveData}
-                        />
-                        <p>Leave Starting Date</p>
-                        <input
-                            type="date"
-                            id="leaveToDate"
-                            name="leaveToDate"
-                            className="form-control mb-3"
-                            min="2021-01-01"
-                            max="2021-12-31"
-                            value={leave.leaveToDate}
-                            placeholder="Enter Ending Date of Leave"
-                            onChange={handleLeaveData}
-                        />
+                        
+                        
                         <p>Leave Status</p>
                         <div>
                             <select id='leaveStatus' type="text" name="leaveStatus" value={leave.leaveStatus} onChange={handleLeaveData}>
                                 <option value="Select" >--Select Status--</option>
-                                <option value="Applied">Applied</option>
                                 <option value="Approved">Approved</option>
                                 <option value="Rejected">Rejected</option>
                             </select>
