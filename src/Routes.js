@@ -36,6 +36,8 @@ import UpdateLeaveStatus from './components/Admin/UpdateLeaveStatus';
 import CheckLeaveStatus from './components/Employee/CheckLeaveStatus';
 import GetCompanyInfo from './components/Employee/GetCompanyInfo';
 import EmployeeLogin from './components/Employee/EmployeeLogin';
+import { Navbar } from 'react-bootstrap';
+import LoginController from './components/LoginController';
 
 
 const Routes = () => {
@@ -43,7 +45,7 @@ const Routes = () => {
         <div>
             <Router>
                 <div>
-                    <Header />
+                <Header/>
                     <div>
                         <Switch>
                             <Route exact path="/"> <Home /> </Route>
@@ -81,6 +83,7 @@ const Routes = () => {
                             <Route path="/UpdateLeaveStatus"> <UpdateLeaveStatus/> </Route>
                             <Route path="/CheckLeaveStatus"> <CheckLeaveStatus/> </Route>
                             <Route path="/GetCompanyInfo"> <GetCompanyInfo/> </Route>
+                            <Route path="/LoginController"> <LoginController/> </Route>
                         </Switch>
                     </div>
                     <Footer />
