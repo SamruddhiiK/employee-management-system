@@ -50,6 +50,7 @@ const LeaveApplications = (props) => {
                     <input
                         type="submit"
                         id="submit"
+                        data-testid="submit3"
                         name="submit"
                         className="btn btn-primary mb-3"
                         value="Get All Leaves"

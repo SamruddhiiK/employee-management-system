@@ -46,6 +46,7 @@ const GetCompanyInfo= (props) => {
                     <input
                         type="submit"
                         id="submit"
+                        data-testid="submit"
                         name="submit"
                         className="btn btn-primary mb-3"
                         value="Get Comapny Information"

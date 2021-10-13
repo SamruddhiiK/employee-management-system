@@ -60,6 +60,7 @@ const ViewEmployees = (props) => {
                     <input
                         type="submit"
                         id="submit"
+                        data-testid="submit1"
                         name="submit"
                         className="btn btn-primary mb-3"
                         value="Get All Emps"

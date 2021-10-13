@@ -61,6 +61,7 @@ const UpdateLeaveStatus = () => {
                         <input
                             type="number"
                             id="leaveId"
+                            data-testid="leaveId"
                             name="leaveId"
                             className="form-control mb-3"
                             value={leave.leaveId}
@@ -106,6 +107,7 @@ const UpdateLeaveStatus = () => {
                         <input
                             type="submit"
                             id="submit"
+                            data-testid="submit"
                             name="submit"
                             className="btn btn-primary mb-3"
                             value="Update Leave Status"

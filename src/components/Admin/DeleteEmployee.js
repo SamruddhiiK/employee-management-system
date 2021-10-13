@@ -60,6 +60,7 @@ const DeleteEmployee = () => {
                         <input
                             type="number"
                             id="employeeId"
+                            data-testid="employeeId"
                             name="employeeId"
                             className="form-control mb-3"
                             value={emp.employeeId}
@@ -70,6 +71,7 @@ const DeleteEmployee = () => {
                         <input
                             type="submit"
                             id="submit"
+                            data-testid="submit"
                             name="submit"
                             className="btn btn-primary mb-3"
                             value="Delete Employee"

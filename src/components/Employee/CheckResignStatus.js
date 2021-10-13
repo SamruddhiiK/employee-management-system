@@ -78,6 +78,7 @@ const CheckResignStatus = () => {
                         <input
                             type="number"
                             id="applicationId"
+                            data-testid="applicationId"
                             name="applicationId"
                             className="form-control mb-3"
                             value={emp.applicationId}
@@ -88,6 +89,7 @@ const CheckResignStatus = () => {
                         <input
                             type="submit"
                             id="submit"
+                            data-testid="submit"
                             name="submit"
                             className="btn btn-primary mb-3"
                             value="Get Resignation Details"

@@ -60,6 +60,7 @@ const DeleteAdmin = () => {
                         <input
                             type="number"
                             id="adminId"
+                            data-testid="adminId"
                             name="adminId"
                             className="form-control mb-3"
                             value={admin.adminId}
@@ -71,6 +72,7 @@ const DeleteAdmin = () => {
                         <input
                             type="submit"
                             id="submit"
+                            data-testid="submit"
                             name="submit"
                             className="btn btn-primary mb-3"
                             value="Delete Admin"

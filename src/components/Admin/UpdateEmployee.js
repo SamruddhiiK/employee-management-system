@@ -60,6 +60,7 @@ const UpdateEmployee = () => {
                         <input
                             type="number"
                             id="employeeId"
+                            data-testid="employeeId"
                             name="employeeId"
                             className="form-control mb-3"
                             value={emp.employeeId}
@@ -95,6 +96,7 @@ const UpdateEmployee = () => {
                         <input
                             type="submit"
                             id="submit"
+                            data-testid="submit"
                             name="submit"
                             className="btn btn-primary mb-3"
                             value="Update Employee"
