@@ -53,6 +53,7 @@ const AdminLogin = () => {
                     <label>Admin Id</label>
                     <input type="number"
                             id="adminId"
+                            data-testid="adminId"
                             name="adminId"
                             className="form-control mb-3"
                             value={oneEmp.adminId}
@@ -77,7 +78,7 @@ const AdminLogin = () => {
                     </div>
                 </div>
 
-                <button type="submit" className="btn btn-primary btn-block" onClick={onSubmit}>Submit</button>
+                <button type="submit" className="btn btn-primary btn-block" data-testid="submit" onClick={onSubmit}>Submit</button>
 
 
             </form>

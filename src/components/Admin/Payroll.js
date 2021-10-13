@@ -79,6 +79,7 @@ const Payroll = () => {
                         <input
                             type="number"
                             id="payrollId"
+                            data-testid="payrollId"
                             name="payrollId"
                             className="form-control mb-3"
                             value={emp.payrollId}
@@ -142,6 +143,7 @@ const Payroll = () => {
                         <input
                             type="submit"
                             id="submit"
+                            data-testid="submit"
                             name="submit"
                             className="btn btn-primary mb-3"
                             value="Add Salary"
