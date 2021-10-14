@@ -68,7 +68,28 @@ const UpdateLeaveStatus = () => {
                             placeholder="Enter ID"
                             onChange={handleLeaveData}
                         />
-                        
+                        <p>Leave From Date</p>
+                        <input
+                                type="date"
+                                id="leaveFromDate"
+                                data-testid="leaveFromDate"
+                                name="leaveFromDate"
+                                className="form-control mb-3"
+                                value={leave.leaveFromDate}
+                                placeholder="Enter starting date for leave"
+                                onChange={handleLeaveData}
+                            />
+                          <p>Leave to Date</p>
+                            <input
+                                type="date"
+                                id="leaveToDate"
+                                data-testid="leaveToDate"
+                                name="leaveToDate"
+                                className="form-control mb-3"
+                                value={leave.leaveToDate}
+                                placeholder="Enter ending date for leave"
+                                onChange={handleLeaveData}
+                            />
                         
                         <p>Leave Status</p>
                         <div>

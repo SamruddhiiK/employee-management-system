@@ -99,6 +99,7 @@ const UpdateResignationStatus  = () => {
                             placeholder="Enter month"
                             onChange={handleEmpData}
                         /> */}
+                        
                         <p>status</p>
                         <div>
                             <select id='status' type="text" name="status" value={emp.status} onChange={handleEmpData()}>
@@ -109,6 +110,7 @@ const UpdateResignationStatus  = () => {
                                
                             </select>
                         </div>
+                        
                         <p><br/><br/></p>
                         <input
                             type="submit"

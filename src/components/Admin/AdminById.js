@@ -70,7 +70,7 @@ const AdminById = () => {
                             data-testid="submit"
                             name="submit"
                             className="btn btn-primary mb-3"
-                            value="Get Employee Details"
+                            value="Get Admin Details"
                         />
                     </div>
                 </form>
