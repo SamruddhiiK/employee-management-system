@@ -100,6 +100,7 @@ const PayrollDetailsByEmployeeId = () => {
                                             <th scope="col">payroll Id</th>
                                             <th scope="col">Month</th>
                                             <th scope="col">Year</th>
+                                            <th scope="col">No of working days</th>
                                             <th scope="col">Salary</th>
                                         </tr>
                                     </thead>
@@ -116,6 +117,7 @@ const PayrollDetailsByEmployeeId = () => {
                                                         <td>{e.payrollId}</td>
                                                         <td>{e.month}</td>
                                                         <td>{e.year}</td>
+                                                        <td>{e.noOfWorkingDays}</td>
                                                         <td>{e.salary}</td>
                                                     </div>
 

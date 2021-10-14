@@ -48,6 +48,7 @@ const Payroll = () => {
             .then((response) => {
                 console.log(response);
                 setEmp(response.data);
+                alert('Salary Updated Successfully !')
             }).catch(error => {
                 console.log(error.message);
                 alert('Enter Correct Details!')
